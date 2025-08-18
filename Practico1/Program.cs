@@ -11,7 +11,7 @@ namespace Practico1
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Formulario1());
+            Application.Run(new FormBase());
         }
     }
 }
