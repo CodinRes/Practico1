@@ -53,5 +53,37 @@ namespace Practico1
         {
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Buscar si ya hay una instancia abierta de Formulario1
+            var formAbierto = Application.OpenForms.OfType<Formulario3>().FirstOrDefault();
+            if (formAbierto == null)
+            {
+                Formulario3 form3 = new Formulario3();
+                form3.Show();
+            }
+            else
+            {
+                // Si ya está abierto, lo traemos al frente
+                formAbierto.BringToFront();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Buscar si ya hay una instancia abierta de Formulario1
+            var formAbierto = Application.OpenForms.OfType<Formulario4>().FirstOrDefault();
+            if (formAbierto == null)
+            {
+                Formulario4 form4 = new Formulario4();
+                form4.Show();
+            }
+            else
+            {
+                // Si ya está abierto, lo traemos al frente
+                formAbierto.BringToFront();
+            }
+        }
     }
 }
